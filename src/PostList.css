@@ -1,0 +1,93 @@
+body{
+    background-color: #f1f3f5;
+}
+.header-actions {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 15px; 
+    margin-bottom: 30px;
+    flex-wrap: wrap; 
+}
+.sort-container {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.sort-button {
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #495057;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sort-button:hover {
+    background-color: #343a40;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.post-card {
+    background-color: #ffffff;
+}
+.expand-more {
+    margin-left: auto;
+    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.expand-more.expanded {
+    transform: rotate(180deg);
+}
+
+.expand-more.collapsed {
+    transform: rotate(0deg);
+}
+
+.post-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-content-area {
+    flex-grow : 1;
+}
+
+.post-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 80px;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box; /* Biar padding nggak ngerusak lebar 100% */
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #1976d2; /* Warna biru MUI saat diklik */
+    box-shadow: 0 0 5px rgba(25, 118, 210, 0.3);
+}
+
+.btn-detail {
+    background-color: #b7b8b8;
+    border:none;
+    border-radius: 4px;
+    padding: 5px;
+}
