@@ -24,5 +24,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "../../latihan/src/Types.ts"]
+  "include": ["src", "../../latihan/src/types.ts"]
 }

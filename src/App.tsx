@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { isEmail } from './utils/isEmail'; //click import aja nanti
-import { ToDo } from './ToDo';
-import { PostList } from './PostList';
+// import { ToDo } from './ToDo';
 import { LearningHooks } from './LearningHooks';
+import PostList from './pages/PostListPage';
 
 
 //pake .tsx biar bisa ada tag htmlnya
@@ -60,7 +60,7 @@ function App() {
   if (isLoggedIn) {
     return <div>
       <div>Hello, {email}</div>
-      <ToDo/>
+      {/* <ToDo/> */}
       <div>
         <button onClick={logout}>logout</button>
       </div>
